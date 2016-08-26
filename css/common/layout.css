@@ -1,0 +1,459 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	デフォルトスタイル
+------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+
+	font-size: 1em;
+}
+
+body,
+table,
+input, textarea, select, option {
+	font-family: STHeiti, PingFangSC-Ultralight, "Helvetica Neue", "Hiragino Sans GB", "Segoe UI", Tahoma, Arial, "Microsoft YaHei", sans-serif;
+}
+
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+img {
+	vertical-align: top;
+}
+
+a,
+a:link {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:visited {
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+}
+
+/*------------------------------------------------------------
+	レイアウト
+------------------------------------------------------------*/
+body {
+	min-width: 1300px;
+	color: #236288;
+	font-size: 18px;
+	line-height: 1.5;
+	background-color: #fff;
+	-webkit-text-size-adjust: none;
+}
+
+#container {
+	text-align: left;
+}
+
+#main {
+}
+
+
+
+/*------------------------------------------------------------
+	ヘッダー
+------------------------------------------------------------*/
+#gHeader {
+	margin-bottom: 42px;
+	position: relative;
+	overflow: hidden;
+}
+
+#gHeader.phone {
+	background: url(../../img/common/bg.gif) repeat left top;
+	background-size: cover;
+}
+
+#gHeader .hInner {
+	margin: 0 auto;
+	padding: 50px 0 46px;
+	width: 1180px;
+	position: relative;
+	z-index: 10;
+}
+
+#gHeader .hInner h1 {
+	margin-bottom: 120px;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+
+#gHeader .hInner h1 img {
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+#gHeader .hInner h1 a {
+	text-decoration: none;
+}
+
+#gHeader .hBox {
+	margin-bottom: 270px;
+}
+
+#gHeader .hBox p {
+	margin-bottom: 25px;
+	font-size: 52px;
+	text-align: center;
+	color: #fff;
+}
+
+#gHeader .hBox .movie {
+	margin: 0 auto;
+	width: 333px;
+	text-align: center;
+	border-bottom: 1px solid #D5DCE0;
+}
+
+#gHeader .hBox .movie span {
+	display: block;
+	margin-bottom: -40px;
+}
+
+#gHeader .subBox .bdsharebuttonbox {
+	float: left;
+}
+
+#gHeader .subBox .bdsharebuttonbox a {
+	margin: 0;
+	float: left;
+	padding-right: 11px;
+}
+
+#gHeader .bdsharebuttonbox a {
+	display: block;
+	width: 41px;
+	height: 42px;
+}
+
+#gHeader .bdsharebuttonbox .bds_tsina {
+	background: url(../../img/common/link01.png) no-repeat;
+}
+
+#gHeader .bdsharebuttonbox .bds_weixin {
+	background: url(../../img/common/link02.png) no-repeat;
+}
+
+#gHeader .bdsharebuttonbox .bds_sqq {
+	background: url(../../img/common/link03.png) no-repeat;
+}
+
+#gHeader .subBox .ca-menu {
+	margin-top: -4px;
+	float: right;
+	width: 180px;
+	position: relative;
+}
+
+#gHeader .subBox .ca-menu .box {
+	width: 180px;
+	height: 44px;
+	border: 1px solid #fff;
+	background: url(../../img/common/bg02.png) repeat left top;
+}
+
+#gHeader .subBox .ca-menu .box .ca-icon {
+	left: inherit;
+	margin-top: -13px;
+	right: 20px;
+}
+
+#gHeader .subBox .ca-menu .box .ca-main {
+	padding: 5px 20px 5px 0;
+	font-size: 21px;
+}
+
+#gHeader .arrow {
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	margin-left: -21px;
+	-webkit-animation: mainVisualScroll 4.5s linear 0s infinite normal;
+	animation: mainVisualScroll 4.5s linear 0s infinite normal;
+}
+
+@keyframes mainVisualScroll {
+	0% {
+	bottom:50px;
+	}
+	84% {
+	bottom: 50px;
+	}
+	88% {
+	bottom:20px;
+	}
+	92% {
+	bottom:30px;
+	}
+	96% {
+	bottom:20px;
+	}
+	100% {
+	bottom:50px;
+	}
+}
+@-webkit-keyframes mainVisualScroll {
+	0% {
+	bottom:50px;
+	}
+	84% {
+	bottom: 50px;
+	}
+	88% {
+	bottom:20px;
+	}
+	92% {
+	bottom:30px;
+	}
+	96% {
+	bottom:20px;
+	}
+	100% {
+	bottom:50px;
+	}
+}
+/*------------------------------------------------------------
+	gNavi
+------------------------------------------------------------*/
+#gNavi {
+	margin: 0 auto 22px;
+	width: 1000px;
+}
+
+#gNavi ul li {
+	width: 111px;
+	float: left;
+	font-size: 14px;
+}
+
+
+
+/*------------------------------------------------------------
+	フッター
+------------------------------------------------------------*/
+#gFooter {
+	overflow: hidden;
+	background-color: #0172B5;
+}
+
+#gFooter .fInner {
+	margin: 0 auto;
+	padding: 13px 0 17px;
+	width: 1180px;
+}
+
+#gFooter ul {
+	float: left;
+	width: 490px;
+}
+
+#gFooter li {
+	margin-right: 20px;
+	display: inline;
+	font-size: 20px;
+}
+
+#gFooter p {
+	font-size: 20px;
+	color: #fff;
+	text-align: right;
+}
+
+
+@media all and (min-width: 0px) and (max-width: 769px) {
+	body {
+		max-width: inherit;
+		min-width: inherit;
+	}
+	
+	/*------------------------------------------------------------
+		ヘッダー
+	------------------------------------------------------------*/
+	#gHeader {
+		margin-bottom: 12px;
+		padding: 0;
+	}
+	
+	body img {
+		width: 100%;
+	}
+ 	
+	#gHeader .hInner {
+		padding: 15px 17px 145px;
+		width: auto;
+	}
+	
+	#gHeader .hInner h1 {
+		margin-bottom: 242px;
+		font-size: 7px;
+	}
+	
+	#gHeader .hInner h1 img {
+		width: 32px;
+		margin-right: 4px;
+	}
+	
+	#gHeader .hBox p {
+		margin-bottom: 13px;
+		font-size: 26px;
+	}
+	
+	#gHeader .hBox .movie {
+		width: 170px;
+	}
+	
+	#gHeader .hBox .movie span {
+		margin: 0 auto -20px;
+		width: 43px;
+	}
+	
+	#gHeader .subBox .bdsharebuttonbox {
+		display: none;
+	}
+	
+	#gHeader .hLink {
+		width: 17px;
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+
+	#gHeader .hLink .bdsharebuttonbox {
+		display: none;
+		position: absolute;
+		top: 35px;
+		left: 0;
+	}
+	
+	#gHeader .bdsharebuttonbox a {
+		width: 20px;
+		height: 21px;
+		float: none;
+		margin: 0 0 8px;
+		background-size: 100% auto !important;
+	}
+		
+	#gHeader .subBox .ca-menu {
+		width: 105px;
+		float: none;
+		margin: 0;
+		position: absolute;
+		bottom: 20px;
+		right: 0;
+	}
+
+	#gHeader .subBox .ca-menu {
+		bottom: 23px;
+		width: 105px;
+		right: 15px;
+		height: auto;
+	}
+	
+	#gHeader .subBox .ca-menu .box .ca-main {
+		padding: 3px 20px 3px 0;
+		font-size: 12px;
+	}
+	
+	#gHeader .subBox .ca-menu .box {
+		margin-bottom: 0;
+		width: auto;
+		height: auto;
+	}
+	
+	#gHeader .subBox .ca-menu .box .ca-icon {
+		transform: scale(0.5);
+		right: 5px;
+		-webkit-transform: scale(0.5);
+	}
+	
+	#gHeader .hBox {
+		margin-bottom: 0;
+	}
+	
+	#gHeader .arrow {
+		width: 30px;
+		margin-left: -16px;
+		bottom: 20px;
+	}
+	
+	/*------------------------------------------------------------
+		gNavi
+	------------------------------------------------------------*/
+	#gNavi {
+		width: auto;
+	}
+	
+	#gNavi ul li {
+		width: 25%;
+		font-size: 12px;
+	}
+	
+	/*------------------------------------------------------------
+		フッター
+	------------------------------------------------------------*/
+	#gFooter .fInner {
+		width: auto;
+		padding: 0 10px 10px;
+	}
+	
+	#gFooter ul {
+		margin-bottom: 5px;
+		float: none;
+		width: auto;
+		text-align: center;
+	}
+	
+	#gFooter li {
+		display: inline-block;
+		font-size: 10px;
+		margin: 0 5px;
+	}
+	
+	#gFooter p {
+		float: none;
+		font-size: 10px;
+		text-align: center;
+	}
+
+}
